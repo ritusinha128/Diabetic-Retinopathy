@@ -1,0 +1,18 @@
+"""from itertools import combinations
+n,k =map(int,input().split());
+arr = list(map(int,input().split()));
+r = set()
+for j in arr:
+    r.add(j)
+def gcd(x,y):
+    while(y):
+        x, y = y, x % y
+    return x
+for i in range(2,k):
+    x = list(combinations(arr,i))
+    for j in x:
+        g = gcd(j[0], j[1])
+        for i in range(2, len(j)):
+            g = gcd(g, j[i])
+        r.add(g)
+print(len(r))"""
